@@ -5,7 +5,7 @@ if (isset($_GET['dir'])){
     $directorio = $_GET['dir'];
 }
 
-echo "carpeta: " . $directorio. "<br><a href='cargarimagenes.php'>Volver</a>";
+echo "carpeta: " . $directorio. "<br><a href='" . $_SERVER['HTTP_REFERER'] . "'>Volver</a>";
 $prueba = $directorio;
 $rutas = $directorio;
 function obtener_estructura_directorios($rutas){

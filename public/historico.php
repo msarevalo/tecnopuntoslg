@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celmedia | ClaroClub</title>
+    <meta charset="UTF-8">
+    <!-- Estilos -->
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!--<link href="../css/estilos.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/script.js" type="application/javascript"></script>
+</head>
+<body>
+<div style="margin-left: 500px; margin-top: 50px">
 <?php
 
 $directorio = null;
@@ -5,12 +19,12 @@ if (isset($_GET['dir'])){
     $directorio = $_GET['dir'];
 }
 
-echo "carpeta: " . $directorio. "<br><a href='cargarimagenes.php'>Volver</a>";
+echo "<a href='index.php' style='margin-left: 40px'><img src='../images/logo_tecnopuntos.png' style='width: 100px;'></a><br><br><br>";
 $prueba = $directorio;
 $rutas = $directorio;
 function obtener_estructura_directorios($rutas){
     // Se comprueba que realmente sea la ruta de un directorio
-    echo "<table border='1'><thead><tr><th>Nombre Archivo</th><th>Imagen</th><th>URL</th></tr></thead>";
+    //echo "<table border='1'><thead><tr><th>Nombre Archivo</th><th>Imagen</th><th>URL</th></tr></thead>";
     $ruta = "../recursos/" . $rutas;
     if (is_dir($ruta)){
         // Abre un gestor de directorios para la ruta indicada
@@ -26,10 +40,10 @@ function obtener_estructura_directorios($rutas){
             if ($archivo != "." && $archivo != "..") {
                 // Si es un directorio se recorre recursivamente
                 if (is_dir($ruta_completa)) {
-                    echo "<li>" . $archivo . "</li>";
+                    echo "<a href='linkshistoricos.php?dir=" . $archivo . "' class='btn w-M br-0 stl-3'>" . $archivo . "</a><br><br>";
                     obtener_estructura_directorios($ruta_completa);
                 } else {
-                    echo "<tr>";
+                    /*echo "<tr>";
                     echo "<td>" . $archivo . "</td>";
                     echo "<td><img src='".$ruta."/".$archivo."' width='100px' alt='".$archivo."' title='".$archivo."'></td>";
                     $var = str_replace(" ", "%20", $archivo);
@@ -38,7 +52,7 @@ function obtener_estructura_directorios($rutas){
                     echo "<td><a href='http://52.15.245.23/tecnopuntoslg/recursos/" . $rutas . "/" .  $var . "' target='_blank'>http://" . $host . "/tecnopuntos/recursos/" . $rutas . "/" .  $var . "</a></td>";
                     //echo "<td>http://" . $host . "/tecnopuntoslg/recursos/" . $rutas . "/" .  $var . "</td>";
                     //echo $host . "<br>" . $ruta;
-                    echo "</tr>";
+                    echo "</tr>";*/
                 }
             }
         }
@@ -79,5 +93,7 @@ function mostrar_imagenes($ruta){
 
 // Ruta de la carpeta en la que se encuentra el archivo desde el que
 // se hace esta llamada
-obtener_estructura_directorios($rutas);
-
+obtener_estructura_directorios("../recursos");
+?>
+</div>
+</body>

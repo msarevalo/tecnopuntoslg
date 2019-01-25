@@ -1,0 +1,179 @@
+
+.btn {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Helvetica', sans-serif;
+    padding: 1em 3em;
+    line-height:1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/************
+CLASES TAMAÑO
+*************/
+
+.w-M {
+    font-size: 1em;
+}
+
+
+/***********
+CLASES FORMA
+************/
+
+.br-3 {
+    border-radius: 1em;
+}
+
+
+/*********
+stl-3
+**********/
+
+.stl-3 {
+    background-color: #72112d;
+    border: 1px solid #72112d;
+    color: white;
+    transition-duration: .2s;
+}
+.stl-3:hover{
+    animation-name: tembleque;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+.stl-3:active{
+    transform: scale(.85,.85);
+}
+
+/**********
+ANIMACIONES
+***********/
+
+@keyframes gelatinahover {
+    0%   {transform: scale(1,1);}
+    50%  {transform: scale(1.3,1.3);}
+    100% {transform: scale(1,1);}
+}
+
+@keyframes tembleque {
+    0%   {transform: rotateZ(0deg);}
+    13%  {transform: rotateZ(10deg);}
+    26% {transform: rotateZ(0deg);}
+    39% {transform: rotateZ(-8deg);}
+    52% {transform: rotateZ(0deg);}
+    62% {transform: rotateZ(6deg);}
+    72% {transform: rotateZ(0deg);}
+    82% {transform: rotateZ(-4deg);}
+    92% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(2deg);}
+}
+
+@keyframes redondeo {
+    0%   {border-radius: 1em 1em 1em 1em}
+    12.5%  {border-radius: 1.5em 1em 1em 1em}
+    25% {border-radius: 2em 1.5em 1em 1em}
+    37.5% {border-radius: 1.5em 2em 1.5em 1em}
+    50% {border-radius: 1em 1.5em 2em 1.5em}
+    62.5% {border-radius: 1em 1em 1.5em 2em}
+    75%   {border-radius: 1em 1em 1em 1.5em}
+    87.5%  {border-radius: 1em 1.5em 2em 1.5em}
+    100% {border-radius: 1em 1em 1em 1em}
+}
+
+@keyframes bote {
+    0%   {transform: scale(1,1);}
+    20%  {transform: scale(.6,1.5);}
+    30% {transform: scale(.3,2); transform: translate(0,-1em);}
+    40% {transform: scale(.6,1.5); transform: translate(0,-2em);}
+    45%   {transform: scale(1,1); transform: translate(0,-2em);}
+    50%  {transform: scale(.6,1.5); transform: translate(0,-2em);}
+    60% {transform: scale(.3,2); transform: translate(0,-2em);}
+    70% {transform: scale(.6,1.5);}
+    80% {transform: scale(1,1);}
+    89% {transform: scale(1,1); transform: translate(0,0);}
+    90% {transform: scale(1.5,.5); transform: translate(0,.5em);}
+    99% {transform: scale(1,1); transform: translate(0,.5em);}
+    100% {transform: scale(1,1);}
+}
+
+@keyframes boteActive {
+    0% {transform: scale(1,1);}
+    25% {transform: scale(.3,2);}
+    50% {transform: scale(1,1);}
+    75% {transform: scale(1.5,1);}
+    100% {transform: scale(1,1);}
+}
+
+@keyframes strech {
+    0% {transform: scale(1,1);}
+    25% {transform: scale(.3,2);}
+    50% {transform: scale(1,1);}
+    75% {transform: scale(1.5,1);}
+    100% {transform: scale(1,1);}
+}
+
+/*TABLA*/
+.tabla {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 3px solid #dcdcdc;
+    position: relative;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.tabla th {
+    height: 30px;
+    text-align: center;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.tabla td {
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.tabla .red {
+    background-color: #ec0000;
+    color: #fff;
+}
+
+.tabla .gray {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.head{
+    background-color: #ec0000;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 0.5%;
+}
+
+.mdl-select__input {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0, 0.12);
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    width: 200px;
+    padding: 4px 0;
+    background: 16px;
+    text-align: left;
+    color: dimgray;
+    text-align-last: center;
+}
+
+

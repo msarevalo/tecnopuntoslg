@@ -25,7 +25,7 @@
                     <div class="col-sm-8">
                         <input type="file" class="form-control" id="archivo[]" name="archivo[]" multiple="">
                     </div>
-                    <button type="submit" class="btn btn-primary">Cargar</button>
+                    <button type="submit" class="btn w-M br-0 stl-3">Cargar</button>
                 </div>
 
             </form>

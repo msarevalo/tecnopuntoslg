@@ -12,13 +12,10 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="panel panel-primary">
-        <div class="panel-body">
-            <a href="cargarimagenes.php">Cargar Imagenes</a><br>
-            <a href="historico.php">Ver Historial</a>
-        </div>
-    </div>
+<div style="margin-left: 350px">
+    <a href="index.php"><img src="../images/logo_tecnopuntos.png" style="width: 200px; margin-left: 130px"></a><br><br>
+    <a class="btn w-M br-0 stl-3" href="cargarimagenes.php">Cargar Imagenes</a>
+    <a class="btn w-M br-0 stl-3" href="historico.php">Ver Historial</a>
 </div>
 </body>
 </html>
