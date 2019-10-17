@@ -1,4 +1,7 @@
 <?php
+if (isset($_POST['nombre'])){
+    $nombre = $_POST['nombre'];
+}
 
 foreach($_FILES["archivo"]['tmp_name'] as $key => $tmp_name)
 {
@@ -13,7 +16,7 @@ foreach($_FILES["archivo"]['tmp_name'] as $key => $tmp_name)
 
         //echo $fdia1;
 
-        $directorio = '../recursos/20190919'; //Declaramos un  variable con la ruta donde guardaremos los archivos
+        $directorio = '../recursos/' . $nombre; //Declaramos un  variable con la ruta donde guardaremos los archivos
 
         //Validamos si la ruta de destino existe, en caso de no existir la creamos
         if(!file_exists($directorio)){

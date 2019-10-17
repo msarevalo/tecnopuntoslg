@@ -24,6 +24,7 @@
                     <label class="col-sm-2 control-label">Archivos</label>
                     <div class="col-sm-8">
                         <input type="file" class="form-control" id="archivo[]" name="archivo[]" multiple="">
+                        <input type="text" class="form-control" id="nombre" name="nombre" multiple="">
                     </div>
                     <button type="submit" class="btn w-M br-0 stl-3">Cargar</button>
                 </div>
