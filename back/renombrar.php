@@ -10,4 +10,4 @@
     $nuevo = $_GET['n'];
 }*/
 
-rename("../recursos/20190919/1001479995.pdf", "../recursos/20190919/1001479995_1.pdf");
+rename("../recursos/20190919/72329653.pdf", "../recursos/20190919/72329653_1.pdf");
